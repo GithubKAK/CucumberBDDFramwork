@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.64261">
+<testcase classname="CucumberBDD Create Contacts" name="CucumberBDD Create a contacts scenario" time="11.64261">
+<system-out><![CDATA[Given User is already in login page.........................................passed
+When title of the login page is Free CRM....................................passed
+Then user enter username and password.......................................passed
+And user cleck on login button..............................................passed
+And user is in the home page................................................passed
+Then user moves to the contact page.........................................passed
+Then user enters firstname and lastname and position........................passed
+Then user close the browser.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

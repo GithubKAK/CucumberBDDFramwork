@@ -13,10 +13,10 @@ Scenario: CucumberBDD Create a contacts scenario
  Then user moves to the contact page
  Then user enters firstname and lastname and position
  
- |firstname  |lastname|position |
- |Tomi			 |Hill    | Manager |
- |Amio |See	|Superviser|
- |Orak 	|Shab		|Worker		|
+ |firstname  |lastname|position  |
+ |Tomi			 |Hill    | Manager  |
+ |Amio       |See	    |Superviser|
+ |Orak 	     |Shab		|Worker		 |
  
  Then user close the browser
  

@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6174735488,
+              "duration": 6107116185,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 83569920,
+              "duration": 111906471,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 444794540,
+              "duration": 386853011,
               "status": "passed"
             },
             "line": 7,
@@ -47,20 +47,27 @@
             "rows": [
               {
                 "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
                   "naveenk",
                   "test@123"
                 ],
-                "line": 8
+                "line": 9
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1651758956,
+              "duration": 1562355041,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user cleck on login button",
             "match": {
               "location": "LoginStepDefinition.user_cleck_on_login_button()"
@@ -69,10 +76,10 @@
           },
           {
             "result": {
-              "duration": 13877153,
+              "duration": 7607196,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "user is in the home page",
             "match": {
               "location": "LoginStepDefinition.user_is_in_the_home_page()"
@@ -81,10 +88,10 @@
           },
           {
             "result": {
-              "duration": 533576753,
+              "duration": 474722400,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "user moves to the contact page",
             "match": {
               "location": "LoginStepDefinition.user_moves_to_the_contact_page()"
@@ -93,10 +100,10 @@
           },
           {
             "result": {
-              "duration": 2049806945,
+              "duration": 9686964070,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "user enters firstname and lastname and position",
             "match": {
               "location": "LoginStepDefinition.user_enters_contact_details(DataTable)"
@@ -104,21 +111,45 @@
             "rows": [
               {
                 "cells": [
+                  "firstname",
+                  "lastname",
+                  "position"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
                   "Tomi",
                   "Hill",
                   "Manager"
                 ],
-                "line": 14
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Amio",
+                  "See",
+                  "Superviser"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Orak",
+                  "Shab",
+                  "Worker"
+                ],
+                "line": 19
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 690490740,
+              "duration": 671378197,
               "status": "passed"
             },
-            "line": 16,
+            "line": 21,
             "name": "user close the browser",
             "match": {
               "location": "LoginStepDefinition.user_close_the_browser()"

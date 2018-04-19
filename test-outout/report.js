@@ -30,46 +30,77 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
         "naveenk",
         "test@123"
       ],
-      "line": 8
+      "line": 9
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "user cleck on login button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "user is in the home page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "user moves to the contact page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "user enters firstname and lastname and position",
   "rows": [
+    {
+      "cells": [
+        "firstname",
+        "lastname",
+        "position"
+      ],
+      "line": 16
+    },
     {
       "cells": [
         "Tomi",
         "Hill",
         "Manager"
       ],
-      "line": 14
+      "line": 17
+    },
+    {
+      "cells": [
+        "Amio",
+        "See",
+        "Superviser"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "Orak",
+        "Shab",
+        "Worker"
+      ],
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 21,
   "name": "user close the browser",
   "keyword": "Then "
 });
@@ -77,56 +108,56 @@ formatter.match({
   "location": "LoginStepDefinition.User_is_already_in_login_page()"
 });
 formatter.result({
-  "duration": 6174735488,
+  "duration": 6107116185,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.title_of_the_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 83569920,
+  "duration": 111906471,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 444794540,
+  "duration": 386853011,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_cleck_on_login_button()"
 });
 formatter.result({
-  "duration": 1651758956,
+  "duration": 1562355041,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_is_in_the_home_page()"
 });
 formatter.result({
-  "duration": 13877153,
+  "duration": 7607196,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_moves_to_the_contact_page()"
 });
 formatter.result({
-  "duration": 533576753,
+  "duration": 474722400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enters_contact_details(DataTable)"
 });
 formatter.result({
-  "duration": 2049806945,
+  "duration": 9686964070,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 690490740,
+  "duration": 671378197,
   "status": "passed"
 });
 });

@@ -1,6 +1,9 @@
+// This is without Examples keyword 
+
 package StepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -42,10 +45,12 @@ public class LoginStepDefinition {
 
 	@Then("^user enter username and password$")
 	public void user_enter_username_and_password(DataTable credentials){
-		List<List<String>> data = credentials.raw();
-		driver.findElement(By.name("username")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.name("password")).sendKeys(data.get(0).get(1));
-	    
+		
+		 for(Map<String,String> data: credentials.asMaps(String.class, String.class)) {
+				 		 
+		driver.findElement(By.name("username")).sendKeys(data.get("username"));
+		driver.findElement(By.name("password")).sendKeys(data.get("password"));
+		 }
 	}
 
 	@Then("^user cleck on login button$")
@@ -74,16 +79,32 @@ public class LoginStepDefinition {
 		
 	}
 	 @Then ("^user enters firstname and lastname and position$")
-	 public void user_enters_contact_details(DataTable personalData) {
-		 List<List<String>>pdata = personalData.raw();
+	 public void user_enters_contact_details(DataTable personalData) throws InterruptedException {
 		 
-		 driver.findElement(By.id("first_name")).sendKeys(pdata.get(0).get(0));
-		 driver.findElement(By.id("surname")).sendKeys(pdata.get(0).get(1));
-		 driver.findElement(By.xpath("//input[@id='company_position']")).sendKeys(pdata.get(0).get(2));
+		  for(Map<String, String> pdata:personalData.asMaps(String.class, String.class)) {
 		 
-		 driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+		 
+		driver.findElement(By.id("first_name")).sendKeys(pdata.get("firstname"));
+		driver.findElement(By.id("surname")).sendKeys(pdata.get("lastname"));
+		driver.findElement(By.xpath("//input[@id='company_position']")).sendKeys(pdata.get("position"));
+		 
+		driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//a[@title= 'Contacts']"))).build().perform();
+		driver.findElement(By.xpath("//a[@title='New Contact']")).click();
+		
+		Thread.sleep(2000);
+		
+		
+		
+		
+	 }   
 	 }
 	
+	 
+	 
+	 
 	@Then("^user close the browser$")
 	public void user_close_the_browser(){
 	   driver.quit();

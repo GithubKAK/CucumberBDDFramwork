@@ -108,56 +108,51 @@ formatter.match({
   "location": "LoginStepDefinition.User_is_already_in_login_page()"
 });
 formatter.result({
-  "duration": 6107116185,
+  "duration": 8070116605,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.title_of_the_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 111906471,
-  "status": "passed"
+  "duration": 69354860,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Free CRM software in the cloud powers sales and customer] service\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and] service\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefinitions.LoginStepDefinition.title_of_the_login_page_is_Free_CRM(LoginStepDefinition.java:42)\r\n\tat ✽.When title of the login page is Free CRM(C:/Users/Dolon/eclipse-workspace/CucumberBDDFramwork/src/main/java/Features/contacts.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 386853011,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_cleck_on_login_button()"
 });
 formatter.result({
-  "duration": 1562355041,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_is_in_the_home_page()"
 });
 formatter.result({
-  "duration": 7607196,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_moves_to_the_contact_page()"
 });
 formatter.result({
-  "duration": 474722400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enters_contact_details(DataTable)"
 });
 formatter.result({
-  "duration": 9686964070,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 671378197,
-  "status": "passed"
+  "status": "skipped"
 });
 });

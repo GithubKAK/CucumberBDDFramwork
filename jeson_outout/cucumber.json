@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6107116185,
+              "duration": 8070116605,
               "status": "passed"
             },
             "line": 5,
@@ -24,8 +24,9 @@
           },
           {
             "result": {
-              "duration": 111906471,
-              "status": "passed"
+              "duration": 69354860,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Free CRM software in the cloud powers sales and customer] service\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and] service\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefinitions.LoginStepDefinition.title_of_the_login_page_is_Free_CRM(LoginStepDefinition.java:42)\r\n\tat ✽.When title of the login page is Free CRM(C:/Users/Dolon/eclipse-workspace/CucumberBDDFramwork/src/main/java/Features/contacts.feature:6)\r\n",
+              "status": "failed"
             },
             "line": 6,
             "name": "title of the login page is Free CRM",
@@ -36,8 +37,7 @@
           },
           {
             "result": {
-              "duration": 386853011,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enter username and password",
@@ -64,8 +64,7 @@
           },
           {
             "result": {
-              "duration": 1562355041,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user cleck on login button",
@@ -76,8 +75,7 @@
           },
           {
             "result": {
-              "duration": 7607196,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "user is in the home page",
@@ -88,8 +86,7 @@
           },
           {
             "result": {
-              "duration": 474722400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "user moves to the contact page",
@@ -100,8 +97,7 @@
           },
           {
             "result": {
-              "duration": 9686964070,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "user enters firstname and lastname and position",
@@ -146,8 +142,7 @@
           },
           {
             "result": {
-              "duration": 671378197,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "user close the browser",

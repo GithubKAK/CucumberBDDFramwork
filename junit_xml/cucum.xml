@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.008903">
-<testcase classname="CucumberBDD Create Contacts" name="CucumberBDD Create a contacts scenario" time="19.008903">
-<system-out><![CDATA[Given User is already in login page.........................................passed
-When title of the login page is Free CRM....................................passed
-Then user enter username and password.......................................passed
-And user cleck on login button..............................................passed
-And user is in the home page................................................passed
-Then user moves to the contact page.........................................passed
-Then user enters firstname and lastname and position........................passed
-Then user close the browser.................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.139471">
+<testcase classname="CucumberBDD Create Contacts" name="CucumberBDD Create a contacts scenario" time="8.139471">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Free CRM software in the cloud powers sales and customer] service&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and] service&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at StepDefinitions.LoginStepDefinition.title_of_the_login_page_is_Free_CRM(LoginStepDefinition.java:42)&#13;&#10;&#9;at ✽.When title of the login page is Free CRM(C:/Users/Dolon/eclipse-workspace/CucumberBDDFramwork/src/main/java/Features/contacts.feature:6)&#13;&#10;"><![CDATA[Given User is already in login page.........................................passed
+When title of the login page is Free CRM....................................failed
+Then user enter username and password.......................................skipped
+And user cleck on login button..............................................skipped
+And user is in the home page................................................skipped
+Then user moves to the contact page.........................................skipped
+Then user enters firstname and lastname and position........................skipped
+Then user close the browser.................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Free CRM software in the cloud powers sales and customer] service> but was:<[#1 Free CRM software in the cloud for sales and] service>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at StepDefinitions.LoginStepDefinition.title_of_the_login_page_is_Free_CRM(LoginStepDefinition.java:42)
+	at ✽.When title of the login page is Free CRM(C:/Users/Dolon/eclipse-workspace/CucumberBDDFramwork/src/main/java/Features/contacts.feature:6)
+]]></failure>
 </testcase>
 </testsuite>
